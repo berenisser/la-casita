@@ -1,13 +1,22 @@
 body{
-    background: 
+    margin: 0 auto;
 }
 
 .casa-caja{
-    width: ;
+    background-image: url(../img/nubes.jpeg);
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
 }
 
 #pasto{
-
+    background-color: #83b231;
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -19,20 +28,49 @@ body{
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    position: absolute;
+    top: 40px;
+    left: 60px;
 }
 
 /*Base de la casita----------------------*/
 #base {
-    width: 200px;
-    height: 100px;
-    background: red;
+    width: 300px;
+    height: 120px;
+    background: brown;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
 }
 
 /*Ventana -----------------------------*/
-#square {
-    width: 100px;
+#ventana1 {
+    width: 60px;
+    height:60px;
+    background: pink;
+    position: absolute;
+    bottom: 80px;
+    right: 120px;
+}
+
+#ventana2 {
+    width: 60px;
+    height:60px;
+    background: pink;
+    position: absolute;
+    bottom: 80px;
+    right: 320px;
+}
+
+/*Puerta -----------------------------*/
+
+#puerta {
+    width: 95px;
     height: 100px;
-    background: red;
+    background: lightyellow;
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
 }
 
 /*Techo--------------------------------*/
@@ -41,7 +79,10 @@ body{
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     height: 0;
-    width: 100px;
+    width: 300px;
+    position: absolute;
+    bottom: 170px;
+    right: 50px;
 }
 
 
@@ -56,9 +97,9 @@ body{
     position: absolute;
     content: "";
     left: 50px;
-    top: 0;
-    width: 50px;
-    height: 80px;
+    top: 30px;
+    width: 40px;
+    height: 60px;
     background: red;
     -moz-border-radius: 50px 50px 0 0;
     border-radius: 50px 50px 0 0;
@@ -67,14 +108,14 @@ body{
         -ms-transform: rotate(-45deg);
          -o-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 50%;
        -moz-transform-origin: 0 100%;
         -ms-transform-origin: 0 100%;
          -o-transform-origin: 0 100%;
             transform-origin: 0 100%;
 }
 #corazon:after {
-    left: 0;
+    left: 10px;
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -85,4 +126,63 @@ body{
         -ms-transform-origin: 100% 100%;
          -o-transform-origin: 100% 100%;
             transform-origin :100% 100%;
+}
+
+/*chimenea------------------------------*/
+#chimenea{
+    width: 45px;
+    height: 50px;
+    background: orange;
+    position: absolute;
+    bottom: 240px;
+    right: 120px;
+}
+
+/*humo------------------------------*/
+#humo1 {
+    width: 40px;
+    height: 40px;
+    background: #aaaaaa;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 265px;
+    right: 120px;
+}
+
+#humo2 {
+    width: 30px;
+    height: 30px;
+    background: #bbbbbb;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 255px;
+    right: 95px;
+}
+
+#humo3 {
+    width: 20px;
+    height: 20px;
+    background: #cccccc;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 245px;
+    right: 80px;
+}
+
+/*Snoopy-------------------*/
+#snoopy{
+    background-image: url(../img/snoopy.png);
+    background-size: 100%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 280px;
+    right: 290px;
+    z-index: 1000;
 }
